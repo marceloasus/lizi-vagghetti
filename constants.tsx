@@ -34,6 +34,31 @@ export const ABOUT_TEXT = {
   ]
 };
 
+// Serviços disponíveis para agendamento interno
+export const SERVICES = [
+  { 
+    id: 'apometria',
+    title: "Sessão de Apometria", 
+    duration: "1h 30min", 
+    price: "R$ 350,00",
+    description: "Limpeza profunda e alinhamento dos corpos sutis."
+  },
+  { 
+    id: 'mentoria',
+    title: "Mentoria Espiritual", 
+    duration: "1h", 
+    price: "R$ 280,00",
+    description: "Orientação para o seu desenvolvimento mediúnico."
+  },
+  { 
+    id: 'cartas',
+    title: "Leitura de Cartas", 
+    duration: "50min", 
+    price: "R$ 200,00",
+    description: "Direcionamento através dos oráculos terapêuticos."
+  }
+];
+
 export const SOCIAL_LINKS: SocialLink[] = [
   {
     id: 'whatsapp',

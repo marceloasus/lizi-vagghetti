@@ -29,8 +29,8 @@ export const LinkCard: React.FC<LinkCardProps> = ({ item, index, onClick }) => {
           rounded-2xl transition-all duration-500 ease-out
           bg-white/[0.03] backdrop-blur-md
           border border-white/[0.08]
-          hover:bg-white/[0.07]
-          hover:border-[#C8AA6E]/30 
+          hover:bg-[#C8AA6E]/[0.05]
+          hover:border-[#C8AA6E]/50 
           hover:shadow-[0_8px_30px_-10px_rgba(0,0,0,0.5)]
           active:scale-[0.99]
           text-left cursor-pointer
@@ -41,7 +41,7 @@ export const LinkCard: React.FC<LinkCardProps> = ({ item, index, onClick }) => {
           flex items-center justify-center
           w-11 h-11 rounded-full mr-4 shrink-0
           bg-white/[0.03] border border-white/10 text-[#d4c5b0]
-          group-hover:text-[#C8AA6E] group-hover:border-[#C8AA6E]/30 group-hover:bg-[#C8AA6E]/10 
+          group-hover:text-[#C8AA6E] group-hover:border-[#C8AA6E]/50 group-hover:bg-[#C8AA6E]/10 
           transition-all duration-300
         `}>
           {item.icon && <item.icon size={22} strokeWidth={1.2} />}
@@ -49,18 +49,18 @@ export const LinkCard: React.FC<LinkCardProps> = ({ item, index, onClick }) => {
 
         {/* Text Content */}
         <div className="flex-1 min-w-0 flex flex-col justify-center gap-0.5">
-          <h3 className="font-serif text-[17px] font-medium text-[#f3f3f3] group-hover:text-white transition-colors truncate tracking-wide">
+          <h3 className="font-serif text-[17px] font-medium text-[#f3f3f3] group-hover:text-[#F5F5F0] transition-colors truncate tracking-wide">
             {item.title}
           </h3>
           {item.subtitle && (
-            <p className="text-[12px] text-[#9ca3af] group-hover:text-[#d1d5db] transition-colors font-sans font-light truncate">
+            <p className="text-[12px] text-[#9ca3af] group-hover:text-[#d4c5b0] transition-colors font-sans font-light truncate">
               {item.subtitle}
             </p>
           )}
         </div>
 
         {/* Arrow */}
-        <div className="text-white/10 group-hover:text-[#C8AA6E]/60 group-hover:translate-x-0.5 transition-all duration-300 pl-3">
+        <div className="text-white/10 group-hover:text-[#C8AA6E] group-hover:translate-x-1 transition-all duration-300 pl-3">
           <ChevronRight size={18} strokeWidth={1.5} />
         </div>
       </Component>
